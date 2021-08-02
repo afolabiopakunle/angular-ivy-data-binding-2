@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { AppCockpitComponent } from './app-cockpit/app-cockpit.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, AppCockpitComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

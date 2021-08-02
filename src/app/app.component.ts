@@ -7,10 +7,15 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   serverElements = [{
-    type: 'blueprint',
+    type: 'server',
     name: 'Afolabi',
     content: 'welcome home Afolabi Oluseun Opakunle'
-  }];
+  }, {
+      type: 'blueprint',
+      name: 'Olubadan',
+      content: 'God has made Afolabi a king'
+    }
+  ];
 
 
 }

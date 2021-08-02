@@ -7,3 +7,9 @@
   </p>
 </div>
 </div>
+<div class="card">
+<h5 class="card-header" [class.bg-primary]="element.type === 'blueprint'" [class.bg-success]="element.type === 'server'">{{ element.name }}</h5>
+<div class="card-body">
+  <p class="card-text">{{ element.content }}</p>
+</div>
+</div>

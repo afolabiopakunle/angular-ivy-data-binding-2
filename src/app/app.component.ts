@@ -17,5 +17,10 @@ export class AppComponent  {
     }
   ];
 
+  pcAdded(data) {
+    this.serverElements.push(data)
+    console.log(this.serverElements)
+  }
+
 
 }

@@ -25,4 +25,12 @@ export class AppComponent  {
     })
   }
 
+  serverAdded(data) {
+    this.serverElements.push({
+      type: 'server',
+      name: data.name,
+      content: data.content
+    })
+  }
+
 }

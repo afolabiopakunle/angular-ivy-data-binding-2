@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AppCockpitComponent implements OnInit {
   @Output() addPC = new EventEmitter<{name: string, content: string}>();
+  @Output() addServer = new EventEmitter<{name: string, content: string}>();
   newServerName = '';
   newServerContent = '';
   constructor(){}
@@ -20,8 +21,8 @@ export class AppCockpitComponent implements OnInit {
     })
   }
 
-  addBlueprint() {
-    this.addPC.emit({
+  addServerFunc() {
+    this.addServer.emit({
       name: this.newServerName,
       content: this.newServerContent
     })

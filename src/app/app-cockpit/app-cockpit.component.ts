@@ -6,22 +6,21 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./app-cockpit.component.css']
 })
 export class AppCockpitComponent implements OnInit {
-  @Output() addPC = new EventEmitter();
+  @Output() addPC = new EventEmitter<{name: string, content: string}>();
   newServerName = '';
   newServerContent = '';
-  constructor() { }
+  constructor(){}
 
-  ngOnInit() {
-  }
+  ngOnInit(){}
 
-  onAddServer() {
+  addPCFunc() {
     this.addPC.emit({
       name: this.newServerName,
       content: this.newServerContent
     })
   }
 
-  onAddBlueprint() {
+  addBlueprint() {
     this.addPC.emit({
       name: this.newServerName,
       content: this.newServerContent

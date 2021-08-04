@@ -18,9 +18,11 @@ export class AppComponent  {
   ];
 
   pcAdded(data) {
-    this.serverElements.push(data)
-    console.log(this.serverElements)
+    this.serverElements.push({
+      type: 'blueprint',
+      name: data.name,
+      content: data.content
+    })
   }
-
 
 }
